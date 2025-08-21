@@ -1,6 +1,7 @@
 {
   "name": "bnv-corner",
   "version": "1.0.0",
+  "type": "module",
   "description": "BnV Corner - Where Balance Meets Vitality",
   "main": "index.js",
   "scripts": {
