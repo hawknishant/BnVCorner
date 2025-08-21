@@ -47,13 +47,13 @@ const gallery = [
   // Avocado Toast
   "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1400&auto=format&fit=crop",
   // Falafel Wrap
-  "https://images.unsplash.com/photo-1617191518008-6d19121d6cfc?q=80&w=1400&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1400&auto=format&fit=crop",
   // Coffee
   "https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1400&auto=format&fit=crop",
   // Paneer Sandwich
-  "https://images.unsplash.com/photo-1606756790138-261d2b21cd31?q=80&w=1400&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1400&auto=format&fit=crop",
   // Hummus & Veggie Sandwich
-  "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=1400&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1400&auto=format&fit=crop",
   // Protein/Salad Bowl
   "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1400&auto=format&fit=crop",
 ];
@@ -64,7 +64,7 @@ const testimonials = [
   { name: "Ritika", role: "Nutrition Coach", quote: "Thoughtful menu, clean ingredients, consistent quality. Love the hummus trio!" },
 ];
 
-function Anchor({ id, label }: { id: string; label: string }) {
+function Anchor({ id, label }) {
   return (
     <a href={`#${id}`} className="px-3 py-2 rounded-xl hover:bg-green-100 transition">
       {label}

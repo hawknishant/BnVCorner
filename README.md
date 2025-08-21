@@ -127,12 +127,64 @@ vercel
 
 ### Deploy to Netlify
 
+#### Option 1: Deploy via Netlify UI (Recommended)
+
 1. Build the project:
 ```bash
 npm run build
 ```
 
-2. Upload the `dist` folder to Netlify
+2. Go to [netlify.com](https://netlify.com) and sign up/login
+3. Click "Add new site" → "Deploy manually"
+4. Drag and drop the `dist` folder from your project
+5. Your site will be deployed and you'll get a URL like `https://your-site-name.netlify.app`
+
+#### Option 2: Deploy via Git (Continuous Deployment)
+
+1. Push your code to GitHub/GitLab/Bitbucket
+2. Go to [netlify.com](https://netlify.com) and sign up/login
+3. Click "Add new site" → "Import an existing project"
+4. Connect your Git provider and select your repository
+5. Configure build settings:
+   - **Build command**: `npm run build`
+   - **Publish directory**: `dist`
+6. Click "Deploy site"
+
+#### Option 3: Deploy via Netlify CLI
+
+1. Install Netlify CLI:
+```bash
+npm install -g netlify-cli
+```
+
+2. Login to Netlify:
+```bash
+netlify login
+```
+
+3. Initialize and deploy:
+```bash
+netlify init
+```
+
+4. Follow the prompts to connect your site
+
+#### Netlify Configuration
+
+Create a `netlify.toml` file in your project root for custom configuration:
+
+```toml
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+```
+
+This ensures proper routing for your single-page application.
 
 ## 🤝 Contributing
 
