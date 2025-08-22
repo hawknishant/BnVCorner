@@ -1,20 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-// BnV Corner – Where Balance Meets Vitality
-// Single-page React site with TailwindCSS classes
-// Sections: Nav, Hero, About, USPs, Menu, Gallery, Testimonials, Contact, Footer
-
+// ---- Navigation ----
 const navItems = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
   { id: "menu", label: "Menu" },
   { id: "gallery", label: "Gallery" },
-  { id: "testimonials", label: "Love" },
   { id: "contact", label: "Contact" },
 ];
 
-// Final menu with categories and launch timing (prices removed)
+// ---- Menu (images tightened to match dish names) ----
 const menu = [
   // Toasts & Sandwiches (Immediate)
   { name: "Avocado Toast", desc: "Feta • tomato • chili flakes", kcal: 250, protein: 6, category: "Toasts & Sandwiches", launch: "Immediate", signature: true, img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1200&auto=format&fit=crop" },
@@ -104,7 +100,7 @@ export default function BnvCornerPage() {
               Eat Clean. <span className="text-green-700">Feel Vital.</span>
             </h1>
             <p className="mt-4 text-lg text-gray-600">
-              Chef‑crafted toasts, wraps and bowls using whole ingredients. Designed for
+              Chef-crafted toasts, wraps and bowls using whole ingredients. Designed for
               balance, built for performance.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
@@ -112,7 +108,7 @@ export default function BnvCornerPage() {
               <a href="#about" className="rounded-2xl px-5 py-3 border border-gray-300 hover:border-gray-400">Why BnV?</a>
             </div>
             <ul className="mt-8 grid xs:grid-cols-3 grid-cols-2 gap-4 text-sm">
-              {["High‑protein options", "Whole grains", "No refined sugar", "Cold‑pressed dressings", "100% vegetarian", "Fresh daily"].map((f) => (
+              {["High-protein options", "Hygienic", "No refined sugar", "Cold-pressed dressings", "100% vegetarian", "Fresh daily"].map((f) => (
                 <li key={f} className="flex items-center gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-green-600">
                     <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-2.59a.75.75 0 1 0-1.22-.86l-3.223 4.57-1.58-1.58a.75.75 0 1 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.1l3.693-5.34Z" clipRule="evenodd" />
@@ -141,12 +137,14 @@ export default function BnvCornerPage() {
       <section id="about" className="py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-10 items-start">
-            <div>
-              <h2 className="text-3xl font-bold">About BnV Corner</h2>
-              <p className="mt-4 text-gray-700 leading-relaxed">
-                BnV Corner stands for <span className="font-semibold">Balance & Vitality</span>. We craft food that’s as nourishing as it is delicious — using whole ingredients, smart cooking and transparent nutrition. Whether you’re powering through a workday or recovering after a workout, our menu keeps you light, focused and energised.
-              </p>
-              <div className="mt-6 grid sm:grid-cols-3 grid-cols-2 gap-4">
+            <div className="space-y-6">
+              <div>
+                <h2 className="text-3xl font-bold">About BnV Corner</h2>
+                <p className="mt-4 text-gray-700 leading-relaxed">
+                  At BnV Corner, we believe that good food should do more than just satisfy cravings. Today, most choices are driven by taste, often at the cost of health. We're here to change that dynamic. BnV stands for <span className="font-semibold">Balance & Vitality</span> — a promise that every bite you take is both wholesome and flavorful. Our menu is designed to deliver clean, one-of-a-kind options that bring together nourishing ingredients and uncompromising taste. Whether it's a busy workday or a mindful break, our food helps you stay light, energized, and in sync with your body.
+                </p>
+              </div>
+              <div className="grid sm:grid-cols-3 grid-cols-2 gap-4">
                 {[{ k: "Avg. Protein", v: "6–18g" }, { k: "Prep Oil", v: "Cold‑pressed" }, { k: "Sugar", v: "No refined" }, { k: "Veg Options", v: "100%" }, { k: "Freshness", v: "Daily" }, { k: "Sourcing", v: "Local" }].map((it) => (
                   <div key={it.k} className="rounded-2xl bg-white shadow p-4">
                     <p className="text-xs text-gray-500">{it.k}</p>
@@ -155,14 +153,29 @@ export default function BnvCornerPage() {
                 ))}
               </div>
             </div>
-            <div className="rounded-3xl p-6 bg-green-600 text-white shadow-2xl">
-              <h3 className="text-2xl font-semibold">Why you’ll love us</h3>
-              <ul className="mt-4 space-y-3 text-green-50">
-                <li>✔️ Thoughtful macros for everyday performance</li>
-                <li>✔️ Whole grains, legumes, nuts and seasonal produce</li>
-                <li>✔️ House dressings, minimal processing</li>
-                <li>✔️ 100% vegetarian and Jain‑friendly options</li>
-                <li>✔️ Transparent ingredients & calories</li>
+            <div className="rounded-3xl p-8 bg-green-600 text-white shadow-2xl h-fit">
+              <h3 className="text-2xl font-semibold mb-6">Why you'll love us</h3>
+              <ul className="space-y-4 text-green-50">
+                <li className="flex items-start gap-3">
+                  <span className="text-green-200 mt-0.5">✔️</span>
+                  <span>Thoughtful macros for everyday performance</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-green-200 mt-0.5">✔️</span>
+                  <span>Whole grains, legumes, nuts and seasonal produce</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-green-200 mt-0.5">✔️</span>
+                  <span>House dressings, minimal processing</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-green-200 mt-0.5">✔️</span>
+                  <span>100% vegetarian and Jain‑friendly options</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-green-200 mt-0.5">✔️</span>
+                  <span>Transparent ingredients & calories</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -213,63 +226,100 @@ export default function BnvCornerPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section id="testimonials" className="py-16 md:py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold">What people say</h2>
-          <div className="mt-8 grid md:grid-cols-3 gap-5">
-            {testimonials.map((t) => (
-              <div key={t.name} className="rounded-2xl p-6 border hover:shadow bg-gradient-to-br from-white to-green-50">
-                <p className="text-gray-700">“{t.quote}”</p>
-                <div className="mt-4 text-sm text-gray-600">— <span className="font-medium">{t.name}</span>, {t.role}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Contact */}
       <section id="contact" className="py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold">Contact</h2>
-          <p className="text-gray-600 mt-2">Pre‑order, catering or franchise enquiries — we’d love to hear from you.</p>
+          <p className="text-gray-600 mt-2">Pre-order, catering or franchise enquiries — we’d love to hear from you.</p>
 
           <div className="mt-8 grid md:grid-cols-2 gap-8">
-            <form onSubmit={(e) => e.preventDefault()} className="rounded-2xl border p-6 bg-white shadow-sm">
-              <div className="grid grid-cols-1 gap-4">
-                <div>
-                  <label className="text-sm text-gray-600">Your name</label>
-                  <input className="mt-1 w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-600" placeholder="e.g., Prateek" />
+            {/* Contact Details */}
+            <div className="rounded-2xl border p-8 bg-white shadow-sm">
+              <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
+              <div className="space-y-6">
+                {/* <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Call / WhatsApp</h4>
+                    <p className="text-gray-600 mt-1">+91 90000 00000</p>
+                    <p className="text-sm text-gray-500 mt-1">Available Mon-Sat, 9am-7pm</p>
+                  </div>
+                </div> */}
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Email</h4>
+                    <p className="text-gray-600 mt-1">bnvcorner@gmail.com</p>
+                    <p className="text-sm text-gray-500 mt-1">We'll respond within 24 hours</p>
+                  </div>
                 </div>
-                <div>
-                  <label className="text-sm text-gray-600">Phone / WhatsApp</label>
-                  <input className="mt-1 w-full rounded-xl border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-600" placeholder="+91 …" />
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Visit Us</h4>
+                    <p className="text-gray-600 mt-1">Kolkata, West Bengal</p>
+                    <p className="text-sm text-gray-500 mt-1">Near City Centre, Salt Lake</p>
+                  </div>
                 </div>
-                <div>
-                  <label className="text-sm text-gray-600">Message</label>
-                  <textarea className="mt-1 w-full rounded-xl border px-3 py-2 h-28 focus:outline-none focus:ring-2 focus:ring-green-600" placeholder="Tell us what you need…" />
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Opening Hours</h4>
+                    <p className="text-gray-600 mt-1">Monday - Saturday</p>
+                    <p className="text-sm text-gray-500 mt-1">9:00 AM - 7:00 PM</p>
+                  </div>
                 </div>
-                <button className="rounded-2xl px-5 py-3 bg-green-600 text-white hover:bg-green-700 shadow w-max">Send</button>
               </div>
-            </form>
+            </div>
 
+            {/* Map */}
             <div className="rounded-2xl overflow-hidden shadow border bg-white">
-              <iframe title="map" className="w-full h-full min-h-[360px]" loading="lazy" referrerPolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.335439473642!2d88.363895!3d22.568946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277a3b84a4a8d%3A0x8f0f8b0e2c4ddf2!2sKolkata%20City%20Centre!5e0!3m2!1sen!2sin!4v1714828800000" />
+              <iframe
+                title="map"
+                className="w-full h-full min-h-[360px]"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=22.572667,88.436389&hl=en&z=16&output=embed"
+              />
             </div>
           </div>
 
-          <div className="mt-8 grid sm:grid-cols-3 gap-4 text-sm">
-            <div className="rounded-2xl p-4 border bg-white">
-              <p className="text-gray-500">Call / WhatsApp</p>
-              <p className="font-semibold">+91 90000 00000</p>
-            </div>
-            <div className="rounded-2xl p-4 border bg-white">
-              <p className="text-gray-500">Email</p>
-              <p className="font-semibold">hello@bnvcorner.com</p>
-            </div>
-            <div className="rounded-2xl p-4 border bg-white">
-              <p className="text-gray-500">Hours</p>
-              <p className="font-semibold">Mon–Sun · 8am–10pm</p>
+          {/* Additional Info */}
+          <div className="mt-8 text-center">
+            <p className="text-gray-600">For pre-orders, catering, or franchise enquiries, please reach out to us directly.</p>
+            <div className="mt-4 flex justify-center gap-4">
+              <a href="mailto:bnvcorner@gmail.com" className="inline-flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-xl hover:bg-green-700 transition">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                Send Email
+              </a>
+              {/* <a href="mailto:bnvcorner@gmail.com" className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 rounded-xl hover:border-gray-400 transition">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Send Email
+              </a> */}
             </div>
           </div>
         </div>
