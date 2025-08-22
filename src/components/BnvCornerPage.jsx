@@ -13,25 +13,16 @@ const navItems = [
 // ---- Menu (images tightened to match dish names) ----
 const menu = [
   // Toasts & Sandwiches (Immediate)
-  { name: "Avocado Toast", desc: "Feta • tomato • chili flakes", kcal: 250, protein: 6, category: "Toasts & Sandwiches", launch: "Immediate", signature: true, img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1200&auto=format&fit=crop" },
-  { name: "Tomato & Cheese Grilled Sandwich", desc: "Simple, classic, always a hit", kcal: 280, protein: 9, category: "Toasts & Sandwiches", launch: "Immediate", img: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1200&auto=format&fit=crop" },
-  { name: "Hummus & Veggie Sandwich", desc: "Hummus, lettuce, bell peppers, olives, cucumber", kcal: 260, protein: 7, category: "Toasts & Sandwiches", launch: "Immediate", img: "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=1200&auto=format&fit=crop" },
-  { name: "Hummus & Falafel Sandwich", desc: "Crunchy falafel with creamy hummus", kcal: 300, protein: 10, category: "Toasts & Sandwiches", launch: "Immediate", img: "https://images.unsplash.com/photo-1604908176997-431b4f584e3a?q=80&w=1200&auto=format&fit=crop" },
-  { name: "Paneer Sandwich", desc: "Spicy, protein‑rich Indian twist", kcal: 320, protein: 12, category: "Toasts & Sandwiches", launch: "Immediate", img: "https://images.unsplash.com/photo-1606756790138-261d2b21cd31?q=80&w=1200&auto=format&fit=crop" },
-  { name: "Peanut Butter Banana Toast", desc: "Quick, filling, healthy", kcal: 300, protein: 8, category: "Toasts & Sandwiches", launch: "Immediate", img: "https://images.unsplash.com/photo-1505252585461-04db1eb84625?q=80&w=1200&auto=format&fit=crop" },
-
-  // Breakfast & Light Snacks (Immediate)
-  { name: "Muesli with Milk/Yogurt", desc: "Optional toppings: dry fruits, honey", kcal: 280, protein: 10, category: "Breakfast & Light Snacks", launch: "Immediate", img: "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop" },
+  { name: "Avocado Toast", desc: "Feta • tomato • chili flakes", kcal: 250, protein: 6, category: "Toasts & Sandwiches", launch: "Immediate", signature: true, img: "/images/avocado toast.jpeg" },
+  { name: "Hummus & Veggie Sandwich", desc: "Hummus, lettuce, bell peppers, olives, cucumber", kcal: 260, protein: 7, category: "Toasts & Sandwiches", launch: "Immediate", img: "/images/hummus and veggie sandwich.jpeg" },
+  { name: "Paneer Sandwich", desc: "Spicy, protein‑rich Indian twist", kcal: 320, protein: 12, category: "Toasts & Sandwiches", launch: "Immediate", img: "/images/paneer sandwich.jpeg" },
 
   // Wraps (Immediate)
-  { name: "Falafel Wrap", desc: "Falafel, lettuce, tahini or yogurt sauce", kcal: 350, protein: 12, category: "Wraps", launch: "Immediate", img: "https://images.unsplash.com/photo-1617191518008-6d19121d6cfc?q=80&w=1200&auto=format&fit=crop" },
-  { name: "Paneer Tikka Wrap", desc: "Marinated paneer, onions, mint chutney", kcal: 400, protein: 14, category: "Wraps", launch: "Immediate", img: "https://images.unsplash.com/photo-1625944528286-21d6fdbb8f1a?q=80&w=1200&auto=format&fit=crop" },
-  { name: "Grilled Veg Wrap", desc: "Zucchini, capsicum, onions, hummus base", kcal: 330, protein: 10, category: "Wraps", launch: "Immediate", img: "https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=1200&auto=format&fit=crop" },
+  { name: "Falafel Wrap", desc: "Falafel, lettuce, tahini or yogurt sauce", kcal: 350, protein: 12, category: "Wraps", launch: "Immediate", img: "/images/fafafel wrap.jpeg" },
+  { name: "Paneer Tikka Wrap", desc: "Marinated paneer, onions, mint chutney", kcal: 400, protein: 14, category: "Wraps", launch: "Immediate", img: "/images/paneer sandwich.jpeg" },
 
   // Healthy Bowls & Salads (2nd Stage/Week)
-  { name: "Chickpea Masala Salad", desc: "Boiled chickpeas, onion, tomato, chaat masala", kcal: 220, protein: 10, category: "Healthy Bowls & Salads", launch: "2nd Stage/Week", img: "https://images.unsplash.com/photo-1604908554007-0270e43b3f5c?q=80&w=1200&auto=format&fit=crop" },
-  { name: "Veggie Bowl", desc: "Lettuce, cucumber, cherry tomato, dressing", kcal: 180, protein: 6, category: "Healthy Bowls & Salads", launch: "2nd Stage/Week", img: "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?q=80&w=1200&auto=format&fit=crop" },
-  { name: "Protein Bowl", desc: "Paneer, Falafel, cherry tomato, dressing", kcal: 400, protein: 18, category: "Healthy Bowls & Salads", launch: "2nd Stage/Week", img: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" },
+  { name: "Chickpea Masala Salad", desc: "Boiled chickpeas, onion, tomato, chaat masala", kcal: 220, protein: 10, category: "Healthy Bowls & Salads", launch: "2nd Stage/Week", img: "/images/chickpea salad.jpeg" },
 
   // Beverages (2nd Stage/Week)
   { name: "Iced Coffee / Cold Coffee", desc: "With or without milk, optional jaggery syrup", kcal: 150, protein: 3, category: "Beverages", launch: "2nd Stage/Week", img: "https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1200&auto=format&fit=crop" },
@@ -122,7 +113,7 @@ export default function BnvCornerPage() {
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.15 }} className="relative">
             <div className="aspect-[4/3] rounded-3xl shadow-xl bg-white overflow-hidden">
               {/* Hero image most relatable to the name/signature dish: Avocado Toast */}
-              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1600&auto=format&fit=crop" alt="Avocado Toast" className="w-full h-full object-cover" loading="lazy" />
+              <img src="/images/avocado toast.jpeg" alt="Avocado Toast" className="w-full h-full object-cover" loading="lazy" />
             </div>
             <div className="absolute -bottom-6 -right-4 bg-white/90 backdrop-blur rounded-2xl shadow p-4 w-56">
               <p className="text-xs text-gray-500">Signature</p>
