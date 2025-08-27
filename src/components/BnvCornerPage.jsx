@@ -19,7 +19,7 @@ const menu = [
 
   // Wraps (Immediate)
   { name: "Falafel Wrap", desc: "Falafel, lettuce, tahini or yogurt sauce", kcal: 350, protein: 12, category: "Wraps", launch: "Immediate", img: "/images/fafafel wrap.jpeg" },
-  { name: "Paneer Tikka Wrap", desc: "Marinated paneer, onions, mint chutney", kcal: 400, protein: 14, category: "Wraps", launch: "Immediate", img: "/images/paneer sandwich.jpeg" },
+  { name: "Paneer Tikka Wrap", desc: "Marinated paneer, onions, mint chutney", kcal: 400, protein: 14, category: "Wraps", launch: "Immediate", img: "/images/paneer-tikka.jpeg" },
 
   // Healthy Bowls & Salads (2nd Stage/Week)
   { name: "Chickpea Masala Salad", desc: "Boiled chickpeas, onion, tomato, chaat masala", kcal: 220, protein: 10, category: "Healthy Bowls & Salads", launch: "2nd Stage/Week", img: "/images/chickpea salad.jpeg" },
@@ -264,7 +264,7 @@ export default function BnvCornerPage() {
                   <div>
                     <h4 className="font-semibold text-gray-900">Visit Us</h4>
                     <p className="text-gray-600 mt-1">Kolkata, West Bengal</p>
-                    <p className="text-sm text-gray-500 mt-1">Near City Centre, Salt Lake</p>
+                    <p className="text-sm text-gray-500 mt-1">Arch Square, Sector V, Salt Lake</p>
                   </div>
                 </div>
                 
@@ -277,7 +277,7 @@ export default function BnvCornerPage() {
                   <div>
                     <h4 className="font-semibold text-gray-900">Opening Hours</h4>
                     <p className="text-gray-600 mt-1">Monday - Saturday</p>
-                    <p className="text-sm text-gray-500 mt-1">9:00 AM - 7:00 PM</p>
+                    <p className="text-sm text-gray-500 mt-1">8:00 AM - 8:00 PM</p>
                   </div>
                 </div>
               </div>
