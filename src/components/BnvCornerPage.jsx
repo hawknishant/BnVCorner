@@ -32,17 +32,17 @@ const menu = [
 // Gallery updated to show menu-related items
 const gallery = [
   // Avocado Toast
-  "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1400&auto=format&fit=crop",
+  "/images/1.jpeg",
   // Falafel Wrap
   "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1400&auto=format&fit=crop",
   // Coffee
-  "https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1400&auto=format&fit=crop",
+  "/images/2.jpeg",
   // Paneer Sandwich
-  "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1400&auto=format&fit=crop",
+  "/images/3.jpeg",
   // Hummus & Veggie Sandwich
-  "https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1400&auto=format&fit=crop",
+  "/images/4.jpeg",
   // Protein/Salad Bowl
-  "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1400&auto=format&fit=crop",
+  "/images/5.jpeg",
 ];
 
 const testimonials = [
