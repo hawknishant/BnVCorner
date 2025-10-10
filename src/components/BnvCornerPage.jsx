@@ -352,8 +352,8 @@ export default function BnvCornerPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Visit Us</h4>
-                    <p className="text-gray-600 mt-1">Kolkata, West Bengal</p>
-                    <p className="text-sm text-gray-500 mt-1">Near City Centre, Salt Lake</p>
+                    <p className="text-gray-600 mt-1">Sector V, Kolkata</p>
+                    <p className="text-sm text-gray-500 mt-1">Near TCS Delta park</p>
                   </div>
                 </div>
                 
