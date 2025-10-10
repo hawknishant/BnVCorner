@@ -221,7 +221,7 @@ export default function BnvCornerPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-200 mt-0.5">✔️</span>
-                  <span>100% vegetarian and Jain‑friendly options</span>
+                  <span>100% vegetarian & vegan options</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-200 mt-0.5">✔️</span>
