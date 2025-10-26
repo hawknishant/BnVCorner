@@ -25,7 +25,7 @@ const menu = [
   { name: "Hummus & Veggie Sandwich", desc: "Hummus, lettuce, bell peppers, olives, cucumber", kcal: 260, protein: 7, img: "/images/hummus and veggie sandwich.jpeg" },
   { name: "Paneer Sandwich", desc: "Spicy, protein‑rich Indian twist", kcal: 320, protein: 12, img: "/images/paneer sandwich.jpeg" },
   { name: "Falafel Wrap", desc: "Falafel, lettuce, tahini or yogurt sauce", kcal: 350, protein: 12, img: "/images/fafafel wrap.jpeg" },
-  { name: "Paneer Tikka Wrap", desc: "Marinated paneer, onions, mint chutney", kcal: 400, protein: 14, img: "/images/paneer sandwich.jpeg" },
+  { name: "Paneer Tikka Wrap", desc: "Marinated paneer, onions, mint chutney", kcal: 400, protein: 14, img: "/images/paneerTikkaWrap.jpeg" },
   { name: "Chickpea Masala Salad", desc: "Boiled chickpeas, onion, tomato, chaat masala", kcal: 220, protein: 10, img: "/images/chickpea salad.jpeg" },
   { name: "Green Detox Juice", desc: "Spinach, cucumber, apple, lemon", kcal: 80, protein: 2, img: "https://images.unsplash.com/photo-1610970881699-44a5587cabec?q=80&w=1200&auto=format&fit=crop" },
   { name: "Beetroot Detox Juice", desc: "Beetroot, carrot, ginger, orange", kcal: 95, protein: 2, img: "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?q=80&w=1200&auto=format&fit=crop" },
