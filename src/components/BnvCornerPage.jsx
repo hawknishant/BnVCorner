@@ -114,7 +114,7 @@ export default function BnvCornerPage() {
           </nav>
 
           {/* Right side - Order Now Button */}
-          <a href="https://bnvcorner.petpooja.com/orders/menu" target="_blank" className="inline-flex rounded-2xl px-4 py-2 bg-orange-600 text-white hover:bg-orange-700 shadow text-sm">
+          <a href="https://bnvcorner.petpooja.com/menu" target="_blank" className="inline-flex rounded-2xl px-4 py-2 bg-orange-600 text-white hover:bg-orange-700 shadow text-sm">
             <span className="hidden sm:inline">Order Now</span>
             <span className="sm:hidden">Order</span>
           </a>
@@ -178,7 +178,7 @@ export default function BnvCornerPage() {
             {/* Footer */}
             <div className="p-4 border-t">
               <a 
-                href="https://bnvcorner.petpooja.com/orders/menu" 
+                href="https://bnvcorner.petpooja.com/menu" 
                 target="_blank" 
                 className="block w-full text-center rounded-2xl px-4 py-3 bg-orange-600 text-white hover:bg-orange-700 shadow font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -364,7 +364,7 @@ export default function BnvCornerPage() {
           </div>
           <div className="mt-8 text-center">
             <a 
-              href="https://bnvcorner.petpooja.com/orders/menu" 
+              href="https://bnvcorner.petpooja.com/menu" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-2xl px-6 py-3 bg-green-600 text-white hover:bg-green-700 shadow-lg transition-all duration-200 font-medium"
